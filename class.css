@@ -1,0 +1,35 @@
+body{
+    /* background-color: red; */
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.grid div{
+    height: 300px;
+    background-color: red;
+
+}
+
+@media only screen and (max-width: 720px) {
+    .grid{
+    display: flex;
+    flex-direction: column;
+    }
+    .grid div{
+        height: 300px;
+        background-color: black;
+    }    
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1300px) {
+   
+        .grid div{
+            height: 300px;
+            background-color: purple;
+        }    
+    
+}
